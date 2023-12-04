@@ -4,14 +4,14 @@ public class Pizza {
     private String size;
     private String tipo;
     private boolean servida;
-    private static int totalpedidas = 0;
-    private static int totalservidas = 0;
+    private static int totalPedidas = 0;
+    private static int totalServidas = 0;
 
     public Pizza(String size, String tipo){
         this.size = size;
         this.tipo = tipo;
         this.servida = false;
-        totalpedidas++;
+        totalPedidas++;
     }
 
     @Override
@@ -33,16 +33,16 @@ public class Pizza {
             System.out.println("Esta pizza ya está servida.");
         }else{
             this.servida = true;
-            totalservidas++;
+            totalServidas++;
         }
     }
 
     public static int getTotalPedidas(){
-        return totalpedidas;
+        return totalPedidas;
     }
 
     public static int getTotalServidas(){
-        return totalservidas;
+        return totalServidas;
     }
 
 
