@@ -34,6 +34,11 @@ public class VentaEntradas {
 
                 case 3:
                     System.out.println("Hasta la vista.");
+                    break;
+
+                default:
+                    System.out.println("Esa no es una opción válida.");
+
             }
         } while (menu != 3);
 
