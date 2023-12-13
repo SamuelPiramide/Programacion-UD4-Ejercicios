@@ -45,7 +45,7 @@ public class VentaEntradas {
 
     }
 
-    public static void entradasPorVender (Zona principal, Zona compraventa, Zona vip){
+    public static void entradasPorVender(Zona principal, Zona compraventa, Zona vip) {
         System.out.println("\n");
         System.out.println("Entradas por vender:");
         System.out.println("Zona principal: " + principal.getEntradasPorVender());
@@ -53,7 +53,7 @@ public class VentaEntradas {
         System.out.println("Zona vip: " + vip.getEntradasPorVender());
     }
 
-    public static void compraEntradas (Zona principal, Zona compraventa, Zona vip){
+    public static void compraEntradas(Zona principal, Zona compraventa, Zona vip) {
         int numEntradas;
         int menu;
 
@@ -65,7 +65,7 @@ public class VentaEntradas {
         System.out.println("2 - Zona compraventa");
         System.out.println("3 - Zona vip");
         menu = sc.nextInt();
-        switch (menu){
+        switch (menu) {
 
             case 1:
                 principal.vender(numEntradas);

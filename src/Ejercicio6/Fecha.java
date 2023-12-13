@@ -1,20 +1,26 @@
 package Ejercicio6;
-
 public class Fecha {
     private int day;
     private int month;
     private int year;
     private String diasemana;
 
-    @Override
-    public String toString() {
-        return String 
-
-
-
+    public Fecha(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
 
-    private String pasarMesADia(){
+    public void setDay(int day) {
+        this.day = day;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(this.day + " de " + pasarMesADia() + " de " + this.year);
+    }
+
+    private String pasarMesADia() {
         return switch (this.month) {
             case 1 -> "enero";
             case 2 -> "febrero";
@@ -30,7 +36,5 @@ public class Fecha {
             case 12 -> "diciembre";
             default -> "[Error]";
         };
-
-
     }
 }
