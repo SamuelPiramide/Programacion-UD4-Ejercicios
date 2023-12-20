@@ -25,11 +25,24 @@ public class PruebaProductos {
         //En la primera posicion ahora está la pizza
         System.out.println(productos.obtener(0));
 
+
+        //Busca el producto con el codigo 1 (No está por lo que muestra el mensaje de error)
         try{
-            productos.buscar(1);
+            System.out.println(productos.buscar(1));
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
 
+        System.out.println("El tamaño de la lista en este momento es de " + productos.tamano() + " elementos.");
+
+
+        productos.cambiarPrecio(2,666);
+
+        try{
+            System.out.println(productos.buscar(2));
+            System.out.println("Precio cambiado para el producto con el codigo 2");
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }
