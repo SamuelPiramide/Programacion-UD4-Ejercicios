@@ -1,5 +1,8 @@
 package Ejercicio6;
 
+import Ejercicio9.Libro;
+import Ejercicio9.Persona;
+
 public class PruebaLibro {
     public static void main(String[] args) {
 
