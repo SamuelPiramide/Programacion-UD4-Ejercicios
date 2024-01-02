@@ -9,7 +9,7 @@ public class ListaLibros {
 
     public boolean addLibro (Libro libro){
         for (Libro li:lista){
-            if(li.esIgual(libro)){
+            if(li.compareTo(libro) == 0){
                 return false;
             }
         }

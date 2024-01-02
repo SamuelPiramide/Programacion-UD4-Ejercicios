@@ -21,21 +21,13 @@ public class Libro implements Comparable<Libro>{
         return salida;
     }
 
+
     @Override
     public int compareTo(Libro libro) {
         int comparatitulo = this.titulo.compareToIgnoreCase(libro.getTitulo());
 
         if (comparatitulo!=0) return comparatitulo;
         else return this.autor.compareToIgnoreCase(libro.getAutor());
-    }
-
-
-    public boolean esIgual(Libro li) {
-        if ((this.titulo.compareToIgnoreCase(li.getTitulo()))==0){
-            return ((this.autor.compareToIgnoreCase(li.getAutor())) == 0);
-        }
-
-        return false;
     }
 
     public String getTitulo() {
