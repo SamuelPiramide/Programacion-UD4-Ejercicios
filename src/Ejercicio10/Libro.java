@@ -1,6 +1,5 @@
 package Ejercicio10;
 
-import java.util.Objects;
 
 public class Libro implements Comparable<Libro>{
     private String titulo;
@@ -25,9 +24,11 @@ public class Libro implements Comparable<Libro>{
     @Override
     public int compareTo(Libro libro) {
         int comparatitulo = this.titulo.compareToIgnoreCase(libro.getTitulo());
-
-        if (comparatitulo!=0) return comparatitulo;
-        else return this.autor.compareToIgnoreCase(libro.getAutor());
+        if (comparatitulo!=0) {
+            return comparatitulo;
+        }else {
+            return this.autor.compareToIgnoreCase(libro.getAutor());
+        }
     }
 
     public String getTitulo() {
